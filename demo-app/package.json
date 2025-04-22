@@ -27,6 +27,7 @@
     "typescript": "^5.8.2"
   },
   "dependencies": {
-    "@bigcommerce/catalyst-client": "^0.14.0"
+    "@bigcommerce/catalyst-client": "^0.14.0",
+    "vercel": "^41.6.1"
   }
 }
