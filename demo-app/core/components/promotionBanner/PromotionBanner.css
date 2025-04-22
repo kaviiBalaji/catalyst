@@ -1,26 +1,33 @@
 .promotion-banner {
     width: 100%;
+    height: 50px; /* Adjust the height of the banner */
     overflow: hidden;  /* Hide content that overflows */
     position: relative;
+    background-color: #f8f8f8; /* Optional background color */
 }
 
 .promotion-slider {
     display: flex;
-    animation: scroll-banner 20s linear infinite; /* Auto-scrolling animation */
+    flex-wrap: nowrap; /* Ensure items do not wrap to next line */
+    animation: scroll-banner 10s linear infinite; /* Auto-scrolling animation */
+    white-space: nowrap; /* Prevent text wrapping */
 }
 
 .promotion-text {
-    padding: 10px;
+    display: inline-block;
+    padding: 10px 20px;
+    margin-right: 50px; /* Space between each promotion */
     text-align: center;
     white-space: nowrap; /* Prevent text wrapping */
+    font-size: 14px; /* Adjust font size as needed */
     flex-shrink: 0; /* Prevent items from shrinking */
-    margin-right: 50px; /* Space between each promotion */
-    border-radius: 5px;
+    background-color: #f0f0f0; /* Optional background color */
+    border-radius: 5px; /* Optional rounded corners */
 }
 
 @keyframes scroll-banner {
     0% {
-        transform: translateX(100%); /* Start offscreen */
+        transform: translateX(100%); /* Start offscreen to the right */
     }
     100% {
         transform: translateX(-100%); /* Move to the left and offscreen */
